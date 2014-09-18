@@ -7,6 +7,7 @@ import math.Line3;
 import math.Mat3;
 import math.Ray3;
 import math.Vec3;
+import android.graphics.Color;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
@@ -63,6 +64,7 @@ public class Renderer {
 		po.add( new LatLng(0,0) ); // we need to add at least one point to avoid crash	
 		mPolygon = mGoogleMap.addPolygon(po);
 		mPolygon.setStrokeWidth(3);
+		mPolygon.setFillColor(Color.BLUE);
 	}
 	
 	private void initMarkers() {
